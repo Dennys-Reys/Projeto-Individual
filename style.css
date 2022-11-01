@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2? family= Alfa+Slab+One & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Sarala & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body{
+    font-size: 100%;
+    background: radial-gradient(76.85% 76.85% at 50% 68.47%, rgba(60, 163, 238, 0) 0%, #3CA3EE 100%);
+
+
+}
+.cabecalho-menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding: 24px 0;
+
+}
+.cabecalho-img{
+    height: 62px;
+    border-radius: 20px;
+}
+.cabecalho-opcoes{
+    display: flex;
+    gap: 32px;
+}
+.menu-item{
+    font-family: 'Sarala', sans-serif;
+    color: #fff2e7;
+    font-weight: 400;
+    font-size: 15px;
+}
+.conteudo{
+    border-top: 0.4px solid #fff2e7;
+}
