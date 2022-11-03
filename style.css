@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2? family= Alfa+Slab+One & display=swap');
 @import url('https://fonts.googleapis.com/css2? family= Sarala & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Alfa+Slab+One & family= IBM+Plex+Serif & family= Sarala & display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -36,5 +37,42 @@ body{
     font-size: 15px;
 }
 .conteudo{
+    margin-bottom: 48px;
     border-top: 0.4px solid #fff2e7;
+}
+.cont-main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+.cont-escrito{
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+.con-esc-main{
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 68px;
+    font-weight: 400;
+    color: #fff2e7;
+}
+.con-esc-sec{
+    font-family: 'Sarala', sans-serif;
+    font-size: 20px; 
+}
+.con-secundario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    margin-top: 32px;
+}
+.con-sn-esc{
+    border-top: 0.4px solid #3CA3EE;
+    padding-top: 38px;
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #3CA3EE;
 }
