@@ -29,6 +29,12 @@ body{
 .cabecalho-opcoes{
     display: flex;
     gap: 32px;
+    cursor: pointer;
+
+}
+.menu-item:hover{
+color: #15d2f3;
+transition: 0.6s;
 }
 .menu-item{
     font-family: 'Sarala', sans-serif;
@@ -75,4 +81,21 @@ body{
     font-weight: 400;
     font-size: 24px;
     color: #3CA3EE;
+}
+.img-principal{
+padding-left: 40px;
+}
+.con-sn-pr{
+    font-family: 'IBM Plex Serif', serif;
+    font-weight: 300;
+    font-size: 18px;
+    color: #031827; 
+}
+.rodape{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 52px;
+    margin-top: 32px;
+    padding: 32px;
 }
