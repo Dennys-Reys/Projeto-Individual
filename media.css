@@ -1,0 +1,13 @@
+@media screen and (max-widht: 760px){
+    .cabecalho-menu{
+        flex-direction: column;
+    }
+    main{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 38px;
+    }
+}
+
+
