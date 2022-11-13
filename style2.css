@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@400;500;600 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Dancing Script', cursiva;
+
+}
+:root{
+    --default-color:#b40640;
+}
+::selection{
+    background-color: var(--default-color);
+    color: #FFDEAD;
+}
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--default-color);
+    padding: 40px;
+}
+.container{
+    max-width: 850px;
+    background: #FFDEAD;
+    box-shadow: 0 5px 10px rgba(255, 222, 173, 0.568);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 40px 30px ;
+}
+.container .loguin-form .title{
+    position: relative;
+    font-size: 24px;
+    font-weight: 500;
+    color: #333;
+}
+.container .loguin-form .title::before{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 30px;
+    width: 25px;
+    background-color: var(--default-color);
+}
+.container .loguin-form .in_put-box{
+    display: contents;
+    align-items: center;
+    height: 50px;
+    width: 100%;
+    margin: 10px 0;
+
+}
+.container .loguin-form .in_put-box input{
+    height: 100%;
+    width: 60%;
+    outline: none;
+    border: none;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.2) ;
+    transition: all 0.3s ease;
+}
+.container .loguin-form .in_put-box input:focus,
+.container .loguin-form .in_put-box input:valid{
+    border-color:var(--default-color)
+} 
+.container .loguin-form .in_put-box input[type="submit"]{
+    background-color: #b40640;
+    border: 0;
+    color: #5e32a3;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.container .loguin-form .in_put-box i{
+    position: absolute;
+    color: var(--default-color);
+    font-size: 17px;
+}
+.container .loguin-form  .forgot a{
+    color: var(--default-color);
+    text-decoration: none;
+}
+.container .loguin-form .divider{
+    text-align: center;
+    margin: 10px;
+    font-size: 18px;
+}
+.container .loguin-form .medias-sociais{
+    text-align: center;
+
+}
+.container .loguin-form .medias-sociais i{
+    margin: 10px;
+    font-size: 30px;
+    cursor: pointer;
+
+}
+.container .loguin-form .medias-sociais i:hover{
+    color: var(--default-color);
+}
+.container .loguin-form .signup-text a{
+    color: var(--default-color);
+    text-decoration: none;
+}
+.container .loguin-img{
+    width: 50%;
+}
+@media(max-width:800px)  {
+    .loguin-img{
+        display: none;
+    }
+    
+}
+

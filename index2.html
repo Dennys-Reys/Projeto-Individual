@@ -4,47 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./style2.css">
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style2.css" />
+    <title>Loguin</title>
 </head>
 <body>
-    <div class="container">
-        <div class="carrosel">
-            <input type="radio" name="slide" id="item-1">
-            <input type="radio" name="slide" id="item-2">
-            <input type="radio" name="slide" id="item-3">
-            <input type="radio" name="slide" id="item-4">
-            <input type="radio" name="slide" id="item-5">
-            <div class="cards" for="item-1" id="item-1">
-                <label class="move" for="item-1" id="move-1">
-                    <img src="./image/kittens-g38ccc222b_1920.jpg" alt="gato 1">
-                </label>
-                <label class="move" for="item-2" id="move-2">
-                    <img src="./image/gato2.jpg" alt="gato 2">
-                </label>
-                <label class="move" for="item-3" id="move-3">
-                    <img src="./image/carrossel-3.jpg" alt="gato 3">
-                </label>
-                <label class="move" for="item-4" id="move-4">
-                    <img src="./image/gato4.jpg" alt="gato 4">
-                </label>
-                <label class="move" for="item-5" id="move-5">
-                    <img src="./image/gato5.jpg" alt="gato 5">
-                </label>
+    <div class="container"> <!--Inicio container-->
+        <div class="loguin-form"> <!--Inicio loguin-Form-->
+            <div class="title"></div> 
+                <form action="#">
 
-            </div>
-        >
+                    <div class="in_put-box">
+                        <i class="fa fa-enveope">
+                            <input type="text" placeholder="Enter your Email" required>
+                        </i>
+                    </div>
 
-    
-<div class="navegacao">
-    <label class="move" for="slide1"></label>
-    <label class="move" for="slide2"></label>
-    <label class="move" for="slide3"></label>
-    <label class="move" for="slide4"></label>
-    <label class="move" for="slide5"></label>
+                    <div class="in_put-box">
+                        <i class="fa fa-lock">
+                            <input type="password" placeholder="Enter your password" required>
+                        </i>
+                    </div>
+                    <div class="forgot">
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+                    <div class="input-box">
+                        <input type="submit" value="Entrar">
+                    </div>
+                    <div class="divider">ou</div>
+                    <div class="medias-sociais">
+                        <i class="fa fa-facebook"></i>
+                        <i class="fa fa-instagram"></i>
+                        <i class="fa fa-pinterest"></i>
+                    </div>
+                    <div class="signup-text">
+                        Não tem uma conta? <a href="#">Crie uma agora</a>
+                    </div>
 
-</div>
-    </div>
-    
+                </form>
+        </div> <!-- Fim loguin Form -->
+         <!-- Inicio loguin-img -->
+        <div class="loguin-img">
+          <img src="./image/cdSAD.png" alt="" width="100%">
+        </div>
+        <!-- Fim loguin-img -->
+    </div> 
+    <!--Fim container-->
 </body>
 </html>
