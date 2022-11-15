@@ -1,9 +1,11 @@
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@400;500;600 & display=swap');
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   text-decoration: none;
+  font-family: 'Dancing Script', cursiva;
 }
 
 body {
@@ -58,7 +60,7 @@ ul {
     height: 20px;
 }
 .banner-principal{
-    background-image: url("./image/flowers.jpg");
+    background-image: url("../image/floresform.jpg");
     height: 500px;
     display: flex;
     flex-direction: row;
@@ -102,10 +104,19 @@ span{
     background-color: #b40640;
     color: #fec89a;
 }
-.separador{
+.separador1{
     display: flex;
     justify-content: center;
-    padding-right: 92px;
+    padding-right: 72px;
+    
+}
+.separador2{
+    display: flex;
+    justify-content: center;
+    padding-right: 72px;
+    margin:  25px 0 ;
+    padding-left: 30%;
+
 }
 
 
@@ -267,6 +278,9 @@ span{
   font-size: 18px;
   color: #031827;
 }
+.musical{
+    color: #540b0e;
+}
 .rodape {
   display: flex;
   justify-content: center;
@@ -274,4 +288,26 @@ span{
   gap: 52px;
   margin-top: 32px;
   padding: 32px;
+}
+.star{
+    width: 20px;
+}
+.card .user{
+    width: 100px;
+}
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 980px;
+    margin: 0 auto;
+    grid-gap: 40px;
+}
+.card{
+    background-color: rgba(128, 0, 0, 0.486);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 35px 40px;
+    box-shadow: 6px 6px 10px rgba(49, 1, 1, 0.377);
+    border-radius: 10px;
 }
