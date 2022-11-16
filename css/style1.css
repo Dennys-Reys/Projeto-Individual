@@ -35,6 +35,7 @@ border-radius: 20px 0 0 20px;
 }
 .img_box img{
     width: 100%;
+    border-radius: 15px;
 }
 .form_box{
     background-color:rgba(128,0,0,0.65) ;
