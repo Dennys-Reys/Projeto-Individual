@@ -22,8 +22,11 @@ body{
     padding-right: 15px;
 }
 .box{
+    padding-top: 40px;
+    margin-top: 20px;
     display: flex;
     width: 930px;
+   
 }
 .img_box{
 background-color: rgba(255,235,205,0.65);
@@ -99,6 +102,58 @@ form .botao button{
     font-size: 35px;
     font-weight: bold;
 }
+nav{
+    display: flex;
+   
+    height: 80px;
+    width: 100%;
+    background-color: #fec89a;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px 0 100px;
+    /* flex-wrap: wrap; */
+    position: absolute;
+    top: 4px;
+}
+
+nav .header-1{
+    display: flex;
+    flex-direction: row;
+}
+nav .logo{
+    color: #570420;
+    font-size: 35px;
+    font-weight: 600;
+
+
+}
+nav img{
+    height: 40px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #570420;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px ;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+
+}
+
+
+
+
 @media (max-width:930px){
     .img_box{
         display:none;
