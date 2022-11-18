@@ -37,8 +37,7 @@ body{
 .redes-socias{
     display: flex;
     justify-content: end ;
-    align-items:flex-end;
-
+   
 }
 .img_box{
 background-color: rgba(255,235,205,0.65);
@@ -117,35 +116,38 @@ form .botao button{
 nav{
 
     display: flex;
+    justify-content: space-between;
     height: 50px;
     width: 100%;
     background-color: #fec89a;
     align-items: center;
     padding: 0 50px 0 100px;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     /* position: absolute; */
     margin-top: 24px;
 }
 .header-1{
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    
     
 }
 nav .logo{
     color: #570420;
     font-size: 35px;
     font-weight: 600;
-
+cursor: pointer;
 
 }
 nav img{
     height: 40px;
+    
 }
 nav ul{
     display: flex;
     flex-wrap: wrap;
     list-style: none; 
+    justify-content: space-between;
 
 }
 nav ul li{
