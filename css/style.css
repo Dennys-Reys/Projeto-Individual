@@ -30,6 +30,9 @@ main {
 ul {
   padding: 0px !important;
 }
+ul ,li{
+  list-style-type: none;
+}
 .header2 {
   background-color: #d6ab5b;
   width: 100%;
@@ -90,6 +93,9 @@ h1{
     line-height: 28px;
     font-family: ;
     margin-top: 30px;
+}
+.foot_title {
+  font-size: 30px;
 }
 h2{
     font-size: 46px;
@@ -306,14 +312,64 @@ span{
 .musical{
     color: #540b0e;
 }
+.caixa{
+  min-height: 90vh;
+}
 .rodape {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   gap: 52px;
-  margin-top: 32px;
-  padding: 32px;
+  margin-top: 32px; */
+  padding: 50px 30px 20px;
+  background-color: #570420;
+  
 }
+.content-foot{
+  max-width: 1300px;
+  margin: 0 auto;
+}
+.foot-corpo{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.social_logo{
+  padding-bottom: 20px;
+  height:50px;
+
+}
+.sub_title{
+  padding-bottom: 10px;
+  color: #fec89a;
+}
+.foot_social_link{
+  padding: 6px;
+  width: 35px;
+  height: 35px;
+  background-color: #d6ab5b;
+  border-radius: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+.foot_social_link img{
+  height: 35px;
+  display: block;
+}
+.foot_social_link:hover{
+  background-color: #b40640;
+}
+.foot_social-link-body{
+  display: flex;
+  gap: 10px;
+}
+.foot_title{
+  color: #d6ab5b;
+  padding-bottom: 20px;
+}
+
 .star{
     width: 20px;
 }
