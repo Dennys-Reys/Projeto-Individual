@@ -4,17 +4,22 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Dancing Script', cursiva;
+    
 }
 body{
     background-image: url("../image/flowers.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 25px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* justify-content: center; */
+    overflow: hidden;
+    /* padding: 25px; */
     min-height: 100vh;
+    height: 100%;
+    
+    font-size: 100%;
 }
 .w50{
     width: 50%;
@@ -22,11 +27,12 @@ body{
     padding-right: 15px;
 }
 .box{
-    padding-top: 40px;
     margin-top: 20px;
+    margin-left: 15%;
     display: flex;
-    width: 930px;
-   
+    width: 910px;
+    justify-content: center; 
+    
 }
 .redes-socias{
     display: flex;
@@ -109,15 +115,16 @@ form .botao button{
     font-weight: bold;
 }
 nav{
+
     display: flex;
-    height: 80px;
+    height: 50px;
     width: 100%;
     background-color: #fec89a;
     align-items: center;
     padding: 0 50px 0 100px;
-    /* flex-wrap: wrap; */
-    position: absolute;
-    top: 4px;
+    flex-wrap: wrap;
+    /* position: absolute; */
+    margin-top: 24px;
 }
 .header-1{
     display: flex;
@@ -155,6 +162,62 @@ nav ul li a{
     transition: all 0.3s ease;
 
 }
+
+ .rodape {
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 52px;
+    margin-top: 45px; 
+    /* padding: 50px 30px 20px; */
+    background-color: #570420;
+    
+  }
+  .content-foot{
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .foot-corpo{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  .social_logo{
+    padding-bottom: 20px;
+    height:50px;
+  
+  }
+  .sub_title{
+    padding-bottom: 10px;
+    color: #fec89a;
+  }
+  .foot_social_link{
+    padding: 6px;
+    width: 35px;
+    height: 35px;
+    background-color: #d6ab5b;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  .foot_social_link img{
+    height: 35px;
+    display: block;
+  }
+  .foot_social_link:hover{
+    background-color: #b40640;
+  }
+  .foot_social-link-body{
+    display: flex;
+    gap: 10px;
+  }
+  .foot_title{
+    color: #d6ab5b;
+    padding-bottom: 20px;
+  }
+  
 
 
 

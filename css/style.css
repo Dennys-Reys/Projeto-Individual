@@ -91,7 +91,6 @@ h1{
     font-size: 80px;
     font-weight: 600;
     line-height: 28px;
-    font-family: ;
     margin-top: 30px;
 }
 .foot_title {
@@ -101,7 +100,7 @@ h2{
     font-size: 46px;
     font-weight: 200;
     line-height: 36px;
-    font-family: ;
+    
     margin-top: 30px; 
     color: #b40640;
     max-width: 500px;
@@ -203,7 +202,7 @@ span{
 }
 .redes-socias ul li {
   display: inline-block;
-  float: right;
+  /* float: right; */
   list-style: none;
   margin-left: 12px;
 }
@@ -312,8 +311,9 @@ span{
 .musical{
     color: #540b0e;
 }
-.caixa{
+.caixa1{
   min-height: 90vh;
+
 }
 .rodape {
   /* display: flex;
