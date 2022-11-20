@@ -4,28 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./css/styleTest.css">
+    <link rel="stylesheet" href="./css/login.css">
     <title>Login</title>
 </head>
 <body>
-    <nav>
-        <div class="logo">
-            <img src="./image/logo.png" alt="logotipo">
+    <a href="index.html">
+        <div class="btn_voltar">
+            <img src="./image/logo.png" alt="">
+        </div>
+    </a>
+   <div class="main_login">
+    <div class="left_login">
+        <h1>Sad Pop</h1>
+        <h2>Faça login <br>E entre para o nosso clube</h2>
+        <img src="./image/music-animate.svg" class="left_img" alt="garoto">
+    </div>
+    <div class="right_login">
+        <div class="cards">
+            <h1>Login</h1>
+            <div class="text_fild">
+                <label for="usuario">Usuario</label>
+                <input type="text" name="usuario" placeholder="Usuário">
+            </div>
+            <div class="text_fild">
+                <label for="senha">Senha</label>
+                <input type="password" name="senha" placeholder="Senha">
+            </div>
+            <button class="botao" onclick="entrar()">Login</button>
+        </div>
 
-        </div>
-        <div class="menu-btn">
-            <i class="fa fa-bars fa-2x" onclick="menuShow()"></i>
-        </div>
-        <ul>
-                <li><a href="#" class="active">Home</a></li>
-                <li><a href="#" >Home</a></li>
-                <li><a href="#" >Home</a></li>
-                <li><a href="#" >Home</a></li>
-                <li><a href="#">Home</a></li>
-        </ul>
-    </nav>
-    <script src="./js/mainL.js"></script>
+    </div>
+   </div>
     
 </body>
 </html>

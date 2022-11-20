@@ -19,6 +19,18 @@ h1{
     font-family: 'Dancing Script', cursiva;
     font-size: 40px;
 }
+.btn_voltar{
+    
+    align-items: center;
+    position: fixed;
+    margin: 1% 90% 0 2%;
+    z-index: 1;
+    width:min-content;
+
+}
+.btn_voltar img{
+height: 40px;
+}
 
 .star{
     width: 20px;

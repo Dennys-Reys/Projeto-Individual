@@ -8,6 +8,18 @@ body{
     background-color: #FFDEAD;
 
 }
+.btn_voltar{
+    
+    align-items: center;
+    position: fixed;
+    margin: 1% 90% 0 2%;
+    z-index: 1;
+    width:min-content;
+
+}
+.btn_voltar img{
+height: 40px;
+}
 .slider{
     margin: 0 auto;
     width: 800px;

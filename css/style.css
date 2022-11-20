@@ -9,16 +9,14 @@
 }
 
 body {
-  height: 100%;
-  max-width: 100%;
-  font-size: 100%;
+  margin: 0;
+  font-family: 'Noto Sans Display', sans-serif;
   color: #fec89a;
   background: radial-gradient(
     76.85% 76.85% at 50% 68.47%,
     rgba(60, 163, 238, 0) 0%,
     #fec89a 100%
   );
-  margin: 0 auto;
   padding: 0;
 }
 main {
@@ -33,6 +31,37 @@ ul {
 ul ,li{
   list-style-type: none;
 }
+.menu-urls {
+  height: 65px;
+  border-bottom: 3px solid #fff2e7;
+}
+.header-1 {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+  background-color: #de6764;
+  height: 60px;
+}
+.redes-socias ul li {
+  display: flex;
+  float: right;
+  list-style: none;
+  margin-left: 12px;
+  flex-direction: row;
+}
+.redes-socias img {
+  height: 30px;
+}
+.redes-socias {
+  display: flex;
+  justify-content: center;
+
+  width: 50%;
+
+  
+  padding: 10px;
+}
 .header2 {
   background-color: #d6ab5b;
   width: 100%;
@@ -44,29 +73,6 @@ ul ,li{
   justify-content: center;
   float: none;
   width: 100%;
-}
-.menu-urls {
-  height: 65px;
-  border-bottom: 3px solid #fff2e7;
-}
-.busca {
-  width: 30%;
-  float: right;
-  text-align: center;
-}
-.busca input {
-  background-image: url("./image/lupafinal.png");
-  background-repeat: no-repeat;
-  height: 10px;
-  padding: 12px;
-  width: 190px;
-  margin-bottom: 40px;
-  background-position: 96%;
-  border: 1px solid #570420;
-  border-radius: 3px;
-}
-.busca img{
-    height: 20px;
 }
 .banner-principal{
     background-image: url("../image/floresform.jpg");
@@ -188,31 +194,10 @@ span{
 /* .img-banner {
   background-image: url(image/folhaAmasada.png);
 } */
-.header-1 {
-  width: 100%;
-  background-color: #de6764;
-  height: 60px;
-}
-.logo {
+.logo img{
   padding: 10px;
-  /* height: 62px; */
-  border-radius: 20px;
-  width: 75%;
-  float: left;
-}
-.redes-socias ul li {
-  display: inline-block;
-  /* float: right; */
-  list-style: none;
-  margin-left: 12px;
-}
-.redes-socias img {
-  height: 30px;
-}
-.redes-socias {
-  width: 20%;
-  float: left;
-  padding: 10px;
+  height: 62px;
+  
 }
 .menu-opcoes ul li {
   display: inline-block;
