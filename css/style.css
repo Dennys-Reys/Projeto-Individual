@@ -7,298 +7,118 @@
   text-decoration: none;
   font-family: 'Dancing Script', cursiva;
 }
-
-body {
+body{
   margin: 0;
-  font-family: 'Noto Sans Display', sans-serif;
-  color: #fec89a;
-  background: radial-gradient(
-    76.85% 76.85% at 50% 68.47%,
-    rgba(60, 163, 238, 0) 0%,
-    #fec89a 100%
-  );
-  padding: 0;
 }
-main {
-  width: 980px;
+header .navigation ul{
+  display: flex;
   position: relative;
-  margin: 0 auto;
+  list-style: none;
+  display: flex;
+}
+li{
+  list-style: none;
+  margin: 0 10px;
+}
+nav{
+  display: flex;
+ align-items: center;
+}
 
+nav p{
+  font-weight: bold;
 }
-ul {
-  padding: 0px !important;
+header{
+  display: flex;
+  
+  justify-content: space-between;
+  position: relative;
+  height: calc(30vh - 50px);
+  background-image:  url('../image/floresform.jpg');
 }
-ul ,li{
-  list-style-type: none;
+header .navigation li {
+  color: #fec89a;
+  display:inline-block ;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 19px;
+  margin-right: 30px;
 }
-.menu-urls {
-  height: 65px;
-  border-bottom: 3px solid #fff2e7;
+.navigation a img{
+  height: 50px;
+  width: 100%;
+  
 }
-.header-1 {
+.navigation{
   display: flex;
   justify-content: space-between;
-
-  width: 100%;
-  background-color: #de6764;
-  height: 60px;
+  margin: auto 30px;
 }
-.redes-socias ul li {
-  display: flex;
-  float: right;
-  list-style: none;
-  margin-left: 12px;
-  flex-direction: row;
-}
-.redes-socias img {
-  height: 30px;
-}
-.redes-socias {
-  display: flex;
-  justify-content: center;
-
-  width: 50%;
-
-  
-  padding: 10px;
-}
-.header2 {
-  background-color: #d6ab5b;
-  width: 100%;
-  margin: 0 auto;
-  padding: 30px;
-}
-.primeirosep {
-  display: flex;
-  justify-content: center;
-  float: none;
-  width: 100%;
-}
-.banner-principal{
-    background-image: url("../image/floresform.jpg");
-    height: 500px;
-    display: flex;
-    justify-content: flex-end;
-    
-}
-aside , article{
-    margin-top: 40px;
-}
-
-article{
-  margin-right: 8%;
-}
-
-aside{
-  position: absolute;
-  left: -15%;
-}
-h1{
-    font-size: 80px;
-    font-weight: 600;
-    line-height: 28px;
-    margin-top: 30px;
-}
-.foot_title {
-  font-size: 30px;
-}
-h2{
-    font-size: 46px;
-    font-weight: 200;
-    line-height: 36px;
-    
-    margin-top: 30px; 
-    color: #b40640;
-    max-width: 500px;
-}
-span{
-    color: #b40640;
-    font-size:85px ;
-}
-.lana{
-    width: 310px;
-    border-radius: 0 35px 0 35px;
-    
-    margin-left: 58px;
-}
-#logn{
-    border: 2px solid #b40640;
-    padding: 5px;
-    border-radius: 15px;
-}
-#logn:hover{
-    background-color: #b40640;
-    color: #fec89a;
-}
-.separador1{
-    display: flex;
-    justify-content: center;
-    padding-right: 72px;
-    
-}
-.separador2{
-    display: flex;
-    justify-content: center;
-    padding-right: 72px;
-    margin:  25px 0 ;
-    padding-left: 30%;
-
-}
-
-
-.container {
-  position: absolute;
-  /* right: 50%; */
-  /* left: 50%; */
-  /* translate: -50% , -50%; */
-  /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding: 25%;
-     */
-}
-/* .cabecalho-menu {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  /* padding: 24px 0; */
-/* } */ */
-/* .container .banner{
-    display: flex;
-    background-image: url(image/flowers.jpg);
-    /* background-color: #540b0e; */
-
-/* height: 400px; */
-/* width: 100vw; */
-*/
-    
-/* } */
-
-.colsem {
-  width: 100%;
-  float: left;
+.meio{
   position: relative;
-}
-.subparagrafo p{
-    font-size: 26px;
-    line-height: 55px;
-}
-.conteudo {
-    display: flex;
-    flex-direction: column;
-   align-items: center;
-   margin-top: 100px;
-   padding: 10px;
-  }
-/* .img-banner {
-  background-image: url(image/folhaAmasada.png);
-} */
-.logo img{
-  padding: 10px;
-  height: 62px;
-  
-}
-.menu-opcoes ul li {
-  display: inline-block;
-  /* float: right; */
-  cursor: pointer;
-  color: #fff2e7;
-  margin-left: 8px;
-  height: 60px;
-  padding-right: 30px;
-}
-.menu-opcoes ul li a {
-  text-decoration: none;
-  color: #fff2e7;
-  font-size: 18px;
-  text-transform: uppercase;
-}
-.menu-opcoes {
-  width: 70%;
-  float: left;
-}
-.busca {
-  width: 20%;
-  float: right;
-}
-.menu-opcoes ul li a:hover {
-  color: #540b0e;
-  transition: 0.6s all;
-}
-/* .menu-opcoes ul li :hover {
-  border-bottom: 2px solid #540b0e;
-} */
-/* .menu-item{
-    font-family: 'Sarala', sans-serif;
-    color: #fff2e7;
-    font-weight: 400;
-    font-size: 15px; */
-/* } */
-.conteudo {
-  margin-bottom: 48px;
-  border-top: 0.4px solid #fff2e7;
-}
-
- 
-  
-.con-esc-main {
-  font-family: "Alfa Slab One", cursive;
-  font-size: 68px;
-  font-weight: 400;
-  color: #570420;
-}
-.con-esc-sec {
-  font-family: "Sarala", sans-serif;
-  font-size: 20px;
-}
-.con-secundario {
-  display: flex;
- flex-wrap: wrap;
-  align-items: center;
-  
-  margin-top: 32px;
-}
-.cont-main .cont-escrito {
-  display: flex;
- justify-content: center;
   width: 100%;
-  margin: 40px;
-}
-.cont-main .subparagrafo{
+  min-height: 100vh;
+  padding: 100px;
+  background-color: #570420;
   display: flex;
-  justify-content: center;
-   width: 100%;
-   margin: 40px;
-
+  align-items: center;
+  justify-content: space-between;
+  overflow: hidden;
 }
-.con-secundario div{
-    border: #b40640 solid 2px;
-    
+.circle{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url(../image/floresform.jpg);
+  clip-path: circle(50% at bottom right);
 }
-.con-sn-esc {
-  border-top: 0.4px solid #3ca3ee;
-  padding-top: 38px;
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 400;
-  font-size: 24px;
-  color: #3ca3ee;
+.meio{
+  position: relative;
+  width: 100%;
+  display: flex;
+  align-items: center;
+    justify-content: space-between;
 }
-.img-principal {
-  padding-left: 40px;
+.meio .texto{
+  position: relative;
+  max-width: 600px;
+  Margin-right: 20PX;
 }
-.con-sn-pr {
-  font-family: "IBM Plex Serif", serif;
-  font-weight: 300;
-  font-size: 18px;
-  color: #031827;
+.meio .texto h1{
+color: #d6ab5b;
+font-size: 3em;
+margin-bottom: 10px;
+line-height: 2.5em;
+font-weight: 700;
 }
-.musical{
-    color: #540b0e;
+.meio .texto h1 span{
+  font-size: 3.5em;
+  color: #E3170A;
 }
-.caixa1{
-  min-height: 90vh;
-
+.meio .texto p{
+  color: #d6ab5b;
+}
+.meio .texto a{
+  display: inline-block;
+  margin-top: 50px;
+  padding: 10PX 25PX;
+  background:#E3170A;
+  color: #BFB48F;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1PX;
+  border-radius: 40PX;
+  transition: 0.3S ease-in-out;
+}
+.meio .texto a:hover{
+  transform: translateY(-10px);
+}
+.box_img{
+  position: absolute;
+  right: 120PX;
+  bottom: 150PX;
 }
 .rodape {
   /* display: flex;

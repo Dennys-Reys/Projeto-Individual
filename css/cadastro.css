@@ -108,7 +108,7 @@ nav ul li a{
   transition: background-color 0.3s;
 }
 .redes-socias ul li:hover{
-    background-color: #b40640;
+    background-color: #E3170A;
 }
 .img_box{
 background-color: rgba(255,235,205,0.65);
@@ -170,12 +170,12 @@ form .in_put input:focus{
 form .botao button{
     width: 50%;
     height: 47px;
-    background: #FFDEAD ;
+    background: #E3170A;
     border-radius: 20px;
     outline: none;
     border: none;
     margin-top: 15px;
-    color: #b40640;
+    color: #fec89a;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
