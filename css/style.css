@@ -24,13 +24,13 @@ nav p{
 }
 header{
   display: flex;
-  
   justify-content: space-between;
   position: relative;
   height: calc(30vh - 50px);
   background-image:  url('../image/floresform.jpg');
 }
-header .navigation li {
+.navbar li {
+  margin-top: 10%;
   color: #fec89a;
   display:inline-block ;
   text-decoration: none;
