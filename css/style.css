@@ -289,6 +289,9 @@ padding: 5px 10px;
   background-color: #570420;
   
 }
+.caixa{
+  margin: 0;
+}
 .content-foot{
   max-width: 1300px;
   margin: 0 auto;
@@ -299,7 +302,7 @@ padding: 5px 10px;
   gap: 20px;
 }
 .social_logo{
-  padding-bottom: 20px;
+  padding-top: 20px;
   height:50px;
 
 }
@@ -333,14 +336,15 @@ padding: 5px 10px;
   color: #d6ab5b;
   padding-bottom: 20px;
 }
-
-.segundosep .separador{
-  display: flex;
-  justify-content: center;
-  float: none;
-  width: 100%;
-  margin-top: 40px;
+.foot_copy{
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ margin-top: 25px
 }
+
+
+
 @media (max-width:767px) {
   header{
     background: #570420;
