@@ -104,6 +104,8 @@ font-weight: 700;
 }
 .meio .texto p{
   color: #d6ab5b;
+  font-size: 1.5rem;
+  font-weight: bold;
 }
 .meio .texto a{
   display: inline-block;
@@ -157,20 +159,34 @@ font-weight: 700;
  
 }
 .segunda_news .card_image {
-  width: 250px; /* largura */
-  height: 50%; /*altura*/
+  width: 100%; /* largura */
+  /* height: 50%; altura */
   border-radius: 0 0 24px 0;
   
 }
 .content-card-texto{
   width: 1;
+ 
+}
+.content-card-texto h1{
+  padding-bottom: 40px;
+  color: black;
+  font-size: 3rem;
+
+}
+.content-card-texto h1 span{
+color: #570420;
+font-size: 4rem;
+font-weight: bold;
 }
 .content-card-meio{
   display: flex;
   justify-content: center;
   flex-direction: column-reverse;
   
-
+}
+.content-card-meio img{
+  height: 50%;
 }
 .content-card-last{
   background-image: url(../assets/image/lana_news1.jpg);
