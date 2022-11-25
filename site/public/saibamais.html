@@ -13,7 +13,7 @@
     </div>
 </a>
 <body>
-   
+    <section class="faq_container">
     <div class="slider">
         <div class="slides">
             <!--radios buttons-->
@@ -58,7 +58,42 @@
             </div>
          
     </div>
- 
+   
+        <h2 class="faq_titulo">Perguntas frequentes</h2>
+        <div class="faq">
+            <div class="pergunta">
+                <h3>Sad pop é música depressiva ?</h3>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="resposta">
+                <p>Não,sad po é um sub-genero novo do pop</p>
+            </div>
+            <div class="pergunta">
+                <h3>Sad pop é música depressiva ?</h3>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="resposta">
+                <p>Não,sad po é um sub-genero novo do pop</p>
+            </div>
+            <div class="pergunta">
+                <h3>Sad pop é música depressiva ?</h3>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="resposta">
+                <p>Não,sad po é um sub-genero novo do pop</p>
+            </div>
+            <div class="pergunta">
+                <h3>Sad pop é música depressiva ?</h3>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="resposta">
+                <p>Não,sad po é um sub-genero novo do pop</p>
+            </div>
+          
+        </div>
+    </section>
+    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
+    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
     
 </body>
 </html>
@@ -77,5 +112,21 @@ function proxImagem(){
     }
     document.getElementById("radio" + count).checked = true;
 }
+//função para perguntas frequentes//
+const pergunta = document.querySelectorAll('.pergunta')
+    const resposta = document.querySelectorAll('.pergunta')
+
+    for (var i = 0; i < pergunta.length; i++) {
+        pergunta[i].addEventListener('click', () => {
+            if (pergunta[i].classList.contains('fechar')) {
+                pergunta[i].classList.toggle('fechar')
+                resposta[i].classList.toggle('ativar')
+            }else{
+                pergunta[i].classList.add('fechar')
+                resposta[i].classList.add('ativar')
+
+            }
+        })
+    }
 
 </script>

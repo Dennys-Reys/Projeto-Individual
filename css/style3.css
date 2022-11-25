@@ -5,20 +5,7 @@ body{
     height: 100vh;
     display: flex;
     justify-content: center;
-    background-color: #FFDEAD;
 
-}
-.btn_voltar{
-    
-    align-items: center;
-    position: fixed;
-    margin: 1% 90% 0 2%;
-    z-index: 1;
-    width:min-content;
-
-}
-.btn_voltar img{
-height: 40px;
 }
 .slider{
     margin: 0 auto;
@@ -103,53 +90,38 @@ transition: 1s;
 }      
 #radio4:checked ~ .auto-navegacao .auto-btn4{
     background-color: #b40640;
-}     
-.faq_container{
+}  
+nav .header-1{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    max-width: 100%;
-    margin: auto;
-    margin-top: 0px;
-    padding: 20px;
+    flex-direction: row;
 }
-.faq_titulo{
-    color: #E3170A;
-    font-size: 40px;
-    padding: 10px 0px 5px 0px;
-    margin-bottom: 15px;
-}
-.pergunta{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    border-bottom: 2px solid #570420;
-    margin-bottom: 10px;
-    cursor: pointer;
-}
-.pergunta h3{
-    color:#E3170A;
-    font-size: 23px;
-}
-.pergunta ion-icon{
-    color:#E3170A;
-    font-size: 33px;
-    transition: all 0.5s ease;
+nav .logo{
+    color: #570420;
+    font-size: 35px;
+    font-weight: 600;
+
 
 }
-.resposta{
-    max-height: 0px;
-    overflow: hidden;
-    opacity: 0;
-    transition: 0.4s ease-in-out;
-    transform: scaleY(0.2);
-    transform-origin: top;
+nav img{
+    height: 40px;
 }
-.ativar{
-    max-height: 300px;
-    opacity: 1;
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+
 }
-.fechar{
-    transform: rotate(180deg); /*rotacionando 180 ??? */
+nav ul li{
+    margin: 0 5px;
 }
+nav ul li a{
+    color: #570420;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px ;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+
+}    

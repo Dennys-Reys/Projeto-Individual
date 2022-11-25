@@ -1,80 +1,20 @@
-
+@import url('https://fonts.googleapis.com/css2? family= Dancing+Script:wght@400;500;600 & display=swap');
 *{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
     font-family: 'Dancing Script', cursiva;
-    
 }
 body{
-    background-image: url("../assets/image/flowers.jpg");
+    background-image: url("../image/flowers.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 25px;
     min-height: 100vh;
-    height: 100%;
-    font-size: 100%;
-}
-nav{
-    display: flex;
-    justify-content: space-between;
-    height: 60px;
-    width: 100%;
-    background-color: #fec89a;
-    padding: 0 50px 0 100px;
-    margin-top: 2px;
-}
-.btn_voltar{
-    
-        align-items: center;
-        position: fixed;
-        margin: 1% 90% 0 2%;
-        z-index: 1;
-        width:min-content;
-   
-}
-.btn_voltar img{
-    height: 40px;
-}
-.header-1{
-    width: 100%;
-    display: flex;
-    justify-content: space-between; 
-     
-}
-nav .logo{
-    margin: 8px;
-    color: #570420;
-    font-size: 35px;
-    font-weight: 600;
-    cursor: pointer;
-
-}
-nav img{
-    height: 37px;
-    
-}
-nav ul{
-width: 100%;
-    display: flex;
-    list-style: none; 
-    
-
-}
-nav ul li{
-    margin: 0 5px;
-}
-nav ul li a{
-    color: #570420;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: 500;
-    padding: 8px 15px ;
-    border-radius: 5px;
-    letter-spacing: 1px;
-    transition: all 0.3s ease;
-
 }
 .w50{
     width: 50%;
@@ -82,33 +22,17 @@ nav ul li a{
     padding-right: 15px;
 }
 .box{
-    margin-top: 2px;
-    margin-left: 15%;
+    padding-top: 40px;
+    margin-top: 20px;
     display: flex;
-    width: 910px;
-    justify-content: center; 
-    
-    
+    width: 930px;
+   
 }
 .redes-socias{
     display: flex;
     justify-content: end ;
-   
-}
-.redes-socias ul li{
-    padding: 8px ;
-    margin: 10px;
-  width: 35px;
-  height: 35px;
-  background-color: #d6ab5b;
-  border-radius: 90px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: background-color 0.3s;
-}
-.redes-socias ul li:hover{
-    background-color: #E3170A;
+    align-items:flex-end;
+
 }
 .img_box{
 background-color: rgba(255,235,205,0.65);
@@ -126,7 +50,7 @@ border-radius: 20px 0 0 20px;
     background-color:rgba(128,0,0,0.65) ;
     border-radius: 0 20px 20px 0;
     backdrop-filter: blur(40px);
-    padding: 20px 30px;
+    padding: 30px 40px;
     width: 50%;
 }
 .form_box h2{
@@ -141,7 +65,7 @@ border-radius: 20px 0 0 20px;
     text-decoration: none;
 }
 .form_box form{
-    margin: 10px 0;
+    margin: 20px 0;
 }
 form .in_put{
     margin-bottom: 15px;
@@ -170,12 +94,12 @@ form .in_put input:focus{
 form .botao button{
     width: 50%;
     height: 47px;
-    background: #E3170A;
+    background: #FFDEAD ;
     border-radius: 20px;
     outline: none;
     border: none;
     margin-top: 15px;
-    color: #fec89a;
+    color: #b40640;
     cursor: pointer;
     font-size: 20px;
     font-weight: bold;
@@ -184,6 +108,57 @@ form .botao button{
     font-size: 35px;
     font-weight: bold;
 }
+nav{
+    display: flex;
+    height: 80px;
+    width: 100%;
+    background-color: #fec89a;
+    align-items: center;
+    padding: 0 50px 0 100px;
+    /* flex-wrap: wrap; */
+    position: absolute;
+    top: 4px;
+}
+.header-1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+}
+nav .logo{
+    color: #570420;
+    font-size: 35px;
+    font-weight: 600;
+
+
+}
+nav img{
+    height: 40px;
+}
+nav ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+
+}
+nav ul li{
+    margin: 0 5px;
+}
+nav ul li a{
+    color: #570420;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 8px 15px ;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+
+}
+
+
+
+
 @media (max-width:930px){
     .img_box{
         display:none;

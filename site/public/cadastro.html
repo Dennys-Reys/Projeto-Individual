@@ -50,23 +50,23 @@
             <form action="#">
                 <div class="in_put">
                     <label for="nome">Nome completo</label>
-                    <input type="text" id="nome" placeholder="Digite o seu nome completo" required>
+                    <input type="text" id="nome_input" placeholder="Digite o seu nome completo">
                 </div>
                 <div class="in_put">
                     <label for="email">E-mail</label>
-                    <input type="text" id="email" placeholder="Digite o seu email" required>
+                    <input type="text" id="email_input" placeholder="Digite o seu email">
                 </div>
                 <div class="in_put">
                     <label for="telefone">Telefone</label>
-                    <input type="tel" id="telefone" placeholder="Digite o telefone" required>
+                    <input type="tel" id="telefone_input" placeholder="Digite o telefone">
                 </div>
                 <div class="in_put w50">
                     <label for="senha">Senha</label>
-                    <input type="password" id="senha" placeholder="Crie uma senha" required>
+                    <input type="password" id="senha_input" placeholder="Crie uma senha">
                 </div>
                 <div class="in_put w50">
                     <label for="Conf-senha">Confirmar senha</label>
-                    <input type="password" id="Conf-senha" placeholder="Confirmar senha" required>
+                    <input type="password" id="conf_senha_input" placeholder="Confirmar senha">
                 </div>
                 <div class="botao">
                     <button>
@@ -89,10 +89,11 @@
         // Agora vá para o método fetch logo abaixo
         var nomeVar = nome_input.value;
         var emailVar = email_input.value;
+        var telefoneVar = telefone_input.value
         var senhaVar = senha_input.value;
-        var confirmacaoSenhaVar = confirmacao_senha_input.value;
+        var confirmacaoSenhaVar = conf_senha_input.value;
 
-        if (nomeVar == "" || emailVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || emailVar == "" ||telefoneVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
             cardErro.style.display = "block"
             mensagem_erro.innerHTML = "(Mensagem de erro para todos os campos em branco)";
 

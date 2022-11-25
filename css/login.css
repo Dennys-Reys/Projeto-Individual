@@ -1,0 +1,145 @@
+
+@import url('https://fonts.googleapis.com/css2? family= Noto+Sans+Display:ital,wght@0,200;0,400; 0,500;0,600;1,400;1,500 & display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  font-family: 'Noto Sans Display', sans-serif;
+}
+.btn_voltar{
+    
+  align-items: center;
+  position: fixed;
+  margin: 1% 90% 0 2%;
+  z-index: 1;
+  width:min-content;
+
+}
+.btn_voltar img{
+height: 40px;
+}
+.main_login {
+  width: 100vw;
+  height: 100vh;
+  background: #570420;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_login {
+  width: 60vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.left_login h1 {
+  color: antiquewhite;
+  font-size: 6vh;
+}
+.left_login h2 {
+    color: antiquewhite;
+    font-size: 3vh;
+    
+  }
+.left_img{
+    width: 55vh;
+}
+.right_login {
+  width: 60vh;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cards {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 30px 35px;
+  background-image: url(../image/floresform.jpg);
+  border-radius: 20px;
+  box-shadow: 0px 10px 40px #1b0009;
+}
+.cards h1{
+    color: antiquewhite;
+    font-weight: 800;
+    margin: 0;
+}
+.text_fild{
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0;
+}
+.text_fild  input{
+width: 100%;
+border: none;
+border-radius: 10px;
+padding: 15px;
+background: #8f425cc4;
+font-weight: 800;
+color: antiquewhite;
+font-size: 12pt;
+box-shadow: 0px 10px 40px #1b0009;
+outline: none;
+box-sizing: border-box;
+
+}
+.text_fild label{
+    color: antiquewhite; ;
+    margin-bottom: 10px;
+}
+.text_fild  input::placeholder{
+    color: #53051f;
+}
+.botao{
+    width: 100%;
+    padding: 16px 0;
+    margin: 25px;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 3px;
+    color: #53051f;
+    background: #fec89a;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #f7719e;;
+}
+@media only screen and (max-width:950px){
+.cards{
+    width: 82%;
+}
+}
+@media only screen and (max-width:600px){
+    .main_login{
+        flex-direction: column;
+    }
+    .left_login h1, h2{
+display: none;
+    }
+    .left_login{
+        width: 100%;
+        height: auto;
+    }
+    .right_login{
+        width: 100%;
+        height: auto;
+    }
+    .left_img{
+width: 40vh;
+    }
+    } 
+
