@@ -5,63 +5,86 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="./css/perguntas.css" />
+    <script src="https://kit.fontawesome.com/ad1efea6f6.js" crossorigin="anonymous"></script>
     <title>Perguntas Frequentes</title>
 </head>
 <body>
-<section class="faq_container">
-    <h2 class="faq_titulo">Perguntas frequentes</h2>
-    <div class="faq">
-        <div class="pergunta">
-            <h3>Sad pop é música depressiva ?</h3>
-            <ion-icon name="chevron-down-outline"></ion-icon>
+    <!--botão iniciar-->
+    <div class="start_btn"><button>Iniciar</button></div>
+    <!--Caixa informações-->
+    <div class="info_box">
+        <div class="info_title">
+            <span>Algumas regras desse Quiz</span>
         </div>
-        <div class="resposta">
-            <p>Não,sad po é um sub-genero novo do pop</p>
+        <div class="info_list">
+            <div class="info">1- Você terá somente <span>15 segundos</span> em cada questão</div>
+            <div class="info">2- Após selecionar a resposta, você não pode voltar atrás</div>
+            <div class="info">3- Você não conseguirá escolher nenhuma opção após o tempo acabar</div>
+            <div class="info">4- Você não pode sair do quiz enquanto estiver jogando</div>
+            <div class="info">5- Você irá acumular pontos a cada resposta correta</div>   
         </div>
-        <div class="pergunta">
-            <h3>Sad pop é música depressiva ?</h3>
-            <ion-icon name="chevron-down-outline"></ion-icon>
-        </div>
-        <div class="resposta">
-            <p>Não,sad po é um sub-genero novo do pop</p>
-        </div>
-        <div class="pergunta">
-            <h3>Sad pop é música depressiva ?</h3>
-            <ion-icon name="chevron-down-outline"></ion-icon>
-        </div>
-        <div class="resposta">
-            <p>Não,sad po é um sub-genero novo do pop</p>
-        </div>
-        <div class="pergunta">
-            <h3>Sad pop é música depressiva ?</h3>
-            <ion-icon name="chevron-down-outline"></ion-icon>
-        </div>
-        <div class="resposta">
-            <p>Não,sad po é um sub-genero novo do pop</p>
-        </div>
-        <div class="pergunta">
-            <h3>Sad pop é música depressiva ?</h3>
-            <ion-icon name="chevron-down-outline"></ion-icon>
-        </div>
-        <div class="resposta">
-            <p>Não,sad po é um sub-genero novo do pop</p>
-        </div>
-        <div class="pergunta">
-            <h3>Sad pop é música depressiva ?</h3>
-            <ion-icon name="chevron-down-outline"></ion-icon>
-        </div>
-        <div class="resposta">
-            <p>Não,sad po é um sub-genero novo do pop</p>
+        <div class="botoes">
+            <button class="quit" onclick="quit_btn()">Sair</button>
+            <button class="restart" onclick="restart_btn()">Iniciar</button>
+            
         </div>
     </div>
-</section>
-   
-
-                 
+<div class="quiz_box">
+    <header>
+        <div class="titulo">Incrivél Quiz Sad Pop </div>
+        <div class="timer">
+            <div class="time_text">Time left</div>
+            <div class="timer_sec">15</div>
     
-
+        </div>
+        <div class="time_line"></div>
+    </header>
+    <section>
+        <!--Quiz box-->
+        <div class="que_text">
+            <!-- <span>Quantos anos tem a cantora Taylor Swift?</span> -->
+        </div>
+        <div class="option_list">
+            <!-- <div class="option">
+                <span>36 anos</span>
+                <div class="icon tick"><i class="fa-solid fa-check"></i></div>
+            </div>
+            <div class="option">
+                <span>25 anos</span>
+                <div class="icon cross"><i class="fa-solid fa-xmark"></i></div>
+            </div>
+            <div class="option">
+                <span>40 anos</span>
+                
+            </div>
+            <div class="option">
+                <span>22 anos</span>
+                
+            </div> -->
+        </div>
+    </section>
+    <footer>
+        <div class="total_quiz">
+            <!-- <span><p>2</p>de<p>5</p>Perguntas</span> -->
+        </div>
+        <button class="next_btn">Próxima Pergunta</button>
+    </footer>
+</div>
+<!--Result box-->
+<div class="result_box">
+<div class="icon">
+    <i class="fas fa-crown"></i>
+</div>
+<div class="complete_text">Você completou o quiz!</div>
+<div class="score_text">
+<span>e desculpa, você tem apenas <p>2</p> of <p>5</p></span>
+</div>
+<div class="botoes">
+    <button class="restart">Recomeçar Quiz</button>
+    <button class="quit">Deixar Quiz</button>
+</div>
+</div>
+<script src="./js/perguntas.js"></script>
+<script src="./js/quiz.js"></script>
 </body>
 </html>
-<script>
-  
-</script>
