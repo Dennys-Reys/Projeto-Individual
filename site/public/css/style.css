@@ -41,6 +41,15 @@ header{
   font-size: 19px;
   margin-right: 30px;
 }
+.navbar ul a:hover{
+border:1px solid lightcoral;
+border-radius: 10px;
+
+}
+.navbar ul a li:hover{
+  color: #E3170A; 
+
+}
 header .navigation ul{
   display: flex;
   position: relative;
@@ -79,13 +88,6 @@ header .navigation ul{
   background-repeat: no-repeat;
   background-size: cover;
 }
-.meio{
-  position: relative;
-  width: 100%;
-  display: flex;
-  align-items: center;
-    justify-content: space-between;
-}
 .meio .texto{
   position: relative;
   max-width: 600px;
@@ -93,13 +95,13 @@ header .navigation ul{
 }
 .meio .texto h1{
 color: #d6ab5b;
-font-size: 3em;
+font-size: 2.5em;
 margin-bottom: 10px;
 line-height: 2.5em;
 font-weight: 700;
 }
 .meio .texto h1 span{
-  font-size: 3.5em;
+  font-size: 3.7em;
   color: #E3170A;
 }
 .meio .texto p{
@@ -137,7 +139,7 @@ font-weight: 700;
 .segunda_news .card{
   width: 250px;
   height: 350px;
-  background: #5D2E46;
+  background: #8e7dbe;
   border-radius: 24px 0px;
   margin: auto;
   display: flex;
@@ -147,15 +149,19 @@ font-weight: 700;
   position: relative;
  
 }
-
 .segunda_news .content-card{
-  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .segunda_news .content-card a{
-  font-size: .8rem;
+  font-size: 14px;
+  color: #8d2f28; 
 }
 .segunda_news .content-card p{
- width: 50%;
+ width: 100%;
+ 
  
 }
 .segunda_news .card_image {
@@ -165,7 +171,8 @@ font-weight: 700;
   
 }
 .content-card-texto{
-  width: 1;
+  width: 100%;
+  margin-right: 85px;
  
 }
 .content-card-texto h1{
@@ -179,23 +186,37 @@ color: #570420;
 font-size: 4rem;
 font-weight: bold;
 }
+.content-card-texto p{
+  font-size: 1.3em;
+}
 .content-card-meio{
+  
   display: flex;
-  justify-content: center;
-  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: space-between;
+  
   
 }
 .content-card-meio img{
-  height: 50%;
+  height: 200px;
+  width: 100%;
+  padding-top: 30px;
+}
+.content-card-meio h1{
+  padding-top: 80px;
+  
 }
 .content-card-last{
   background-image: url(../assets/image/lana_news1.jpg);
   background-size: cover;
   position: absolute;
   height: 100%;
-  border-radius: 24px 0 24px 0;
-
-
+  border-radius: 25px 0 25px 0;
+}
+.content-card-last a{
+  color: #E3170A;
+  font-size: 13px;
+  font-weight: bold;
 }
 .card2{
   width: 25%;
@@ -246,11 +267,13 @@ padding: 5px 10px;
 }
 .item{
   background-color: #f5f5f5;
-  margin: 20px;
+  margin: 15px;
   padding-bottom: 40px;
   text-align: center;
   box-shadow: 7px 7px 0 #dbb094;
   border: 2px solid #aaa8a8;
+  width: 100%;
+  
 }
 .item h2{
   background: #dbb094 ;
@@ -291,10 +314,6 @@ padding: 5px 10px;
   align-items: center;
   justify-content: center;
 }
-
-
-
-
 .rodape {
   /* display: flex;
   justify-content: center;
@@ -337,6 +356,15 @@ padding: 5px 10px;
   justify-content: center;
   transition: background-color 0.3s;
 }
+.foot_menu a{
+  color: #d6ab5b; 
+}
+.foot_contact a{
+  color: #d6ab5b;
+}
+.foot_contact li{
+  list-style: none;
+}
 .foot_social_link img{
   height: 35px;
   display: block;
@@ -353,6 +381,7 @@ padding: 5px 10px;
   padding-bottom: 20px;
 }
 .foot_copy{
+  color: #d6ab5b;
  display: flex;
  align-items: center;
  justify-content: center;

@@ -6,6 +6,8 @@ const quiz_box = document.querySelector(".quiz_box");
 const option_list = document.querySelector(".option_list");
 const timeContador =quiz_box.querySelector(".timer .timer_sec");
 const timeLiner =quiz_box.querySelector("header .time_line");
+const timeOff =quiz_box.querySelector("header .time_text");
+
 
 // Se clicar no botão iniciar quiz 
 
@@ -33,13 +35,38 @@ continue_btn.onclick =() =>{
 var que_count = 0;
 var que_numero = 1;
 var contador;
+var contadorLine;
 var timeValor = 15;
 var widthValor = 0;
+var userPontos = 0;
 
 const next_btn = quiz_box.querySelector(".next_btn");
 const result_box = document.querySelector(".result_box");
 const restart_quiz = result_box.querySelector(".botoes .restart");
 const quit_quiz = result_box.querySelector(".botoes .quit");
+
+restart_quiz.onclick = () =>{
+    quiz_box.classList.add("activeQuiz");
+    result_box.classList.remove("activeResults");
+    var que_count = 0;
+    var que_numero = 1;
+    var timeValor = 15;
+    var widthValor = 0;
+    var userPontos = 0;
+    mostrePerguntas(que_count);
+    queContador(que_numero);
+    clearInterval(contador)
+    startTimer(timeValor);
+    clearInterval(contadorLine)
+    startTimerLine(widthValor);
+    next_btn.style.display = "none";
+    timeOff.textContent = "Tempo";
+}
+quit_quiz.onclick = () =>{
+    clearInterval(contador)
+    clearInterval(contadorLine)
+    window.location.reload();
+}
 
 // Se o botao next for clicado
 next_btn.onclick =() =>{
@@ -53,6 +80,7 @@ next_btn.onclick =() =>{
     clearInterval(contadorLine)
     startTimerLine(widthValor);
     next_btn.style.display = "none";
+    timeOff.textContent = "Tempo";
    }
    else{
         console.log("Perguntas completadas");
@@ -87,6 +115,8 @@ function optionSelected(resposta){
     var respCerta = perguntas[que_count].resposta;
     var allOpcions = option_list.children.length;
     if(userResp == respCerta){
+        userPontos += 1;
+        console.log(userPontos);
         resposta.classList.add("correct");
         console.log("Resposta correta");
         resposta.insertAdjacentHTML("beforeend", tickIcon)
@@ -104,7 +134,7 @@ function optionSelected(resposta){
             }
         }
     }
-    //Uma  que o user selecionar, as outras opcões serão desabilitadas
+    //Uma vez que o user selecionar, as outras opcões serão desabilitadas
     
     for (var i = 0; i < allOpcions; i++) {
         option_list.children[i].classList.add("desabilitado");
@@ -113,9 +143,24 @@ function optionSelected(resposta){
     next_btn.style.display = "block";
 }
 function mostreResultBox(){
+
     info_box.classList.remove("activeInfo"); // esconde a caixa de informações
-    quiz_box.classList.remove("activeQuiz"); // esconde o quiz
+    quiz_box.classList.remove("activeQuiz"); // escond  e o quiz
     result_box.classList.add("activeResult"); // Mostra o resultado
+    const pontoText = result_box.querySelector(".score_text");
+
+    if(userPontos > 3){
+        var pontosTag = '<span>Parabéns, você tem <p>'+userPontos +'</p> of <p>'+ perguntas.length +'</p></span>'
+        pontoText.innerHTML = pontosTag ;
+    }
+    else if(userPontos > 1){
+        var pontosTag = '<span>Legal, você tem <p>'+userPontos +' pontos </p> of <p>'+ perguntas.length +'</p></span>'
+        pontoText.innerHTML = pontosTag ;
+    }
+    else{
+        var pontosTag = '<span>e desculpa, você tem apenas <p>'+userPontos +'</p> of <p>'+ perguntas.length +'</p></span>'
+        pontoText.innerHTML = pontosTag ;
+    }
 }
 function startTimer(time){
     contador = setInterval(timer, 1000);
@@ -129,6 +174,22 @@ function startTimer(time){
         if(time < 0){
             clearInterval(contador);
             timeContador.textContent = "00";
+            timeOff.textContent = "Time off";
+
+            var respCerta = perguntas[que_count].resposta;
+            var allOpcions = option_list.children.length;
+
+            for (var i = 0; i < allOpcions; i++) {
+                if(option_list.children[i].textContent == respCerta){
+                    option_list.children[i].setAttribute("class", "option correct" );
+                    option_list.children[i].insertAdjacentHTML("beforeend", tickIcon)
+                }
+            }
+            for (var i = 0; i < allOpcions; i++) {
+                option_list.children[i].classList.add("desabilitado");
+            
+            }
+            next_btn.style.display = "block";
         }
     }
 }
@@ -142,16 +203,6 @@ function startTimerLine(time){
         }
     }
 }
-
-
-
-
-
-
-
-
-
-
 
 function queContador(index){
     const bottom_contador = quiz_box.querySelector(".total_quiz");

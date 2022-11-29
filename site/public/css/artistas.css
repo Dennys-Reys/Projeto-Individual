@@ -17,7 +17,9 @@ h1{
     justify-content: center;
     margin:5rem  0  5rem 0 ;
     font-family: 'Dancing Script', cursiva;
-    font-size: 40px;
+    font-size: 4em;
+    color: #570420;
+    font-weight: bold;
 }
 .btn_voltar{
     
@@ -37,7 +39,9 @@ height: 60px;
     width: 20px;
 }
 .card .user{
-    width: 100px;
+    width: 120px;
+    height: 120px;
+    border-radius: 100px;
 }
 .cards{
     display: grid;
@@ -55,3 +59,90 @@ height: 60px;
     box-shadow: 6px 6px 10px rgba(49, 1, 1, 0.377);
     border-radius: 10px;
 }
+.card a{
+    color: #fff;
+    text-decoration: none;
+    border: 1px solid #570420;
+    padding: 5px 8px;
+    border-radius: 10px;
+    margin-top: 18px;
+    background: #8e7dbe;
+    outline: none;
+}
+.rodape { 
+    gap: 50px;
+    margin-top: 32px;
+    background-color: #570420;
+    
+  }
+  .caixa{
+    margin: 15px 0;
+    height: auto;
+  }
+  .foot_item h1{
+    font-size: 2em;
+  }
+  .content-foot{
+    max-width: 1300px;
+    margin: 0 auto;
+  }
+  .foot-corpo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 25px;
+    margin: 10px 5px;
+  }
+  .social_logo{
+    padding-top: 20px;
+    height:50px;
+  
+  }
+  .sub_title{
+    margin-top: 20px;
+    padding-bottom: 20px;
+    color: #fec89a;
+  }
+  .foot_social_link{
+    padding: 6px;
+    width: 35px;
+    height: 35px;
+    background-color: #d6ab5b;
+    border-radius: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s;
+  }
+  .foot_menu a{
+    color: #d6ab5b; 
+  }
+  .foot_contact a{
+    color: #d6ab5b;
+  }
+  .foot_contact li{
+    list-style: none;
+  }
+  .foot_social_link img{
+    height: 35px;
+    display: block;
+  }
+  .foot_social_link:hover{
+    background-color: #b40640;
+  }
+  .foot_social-link-body{
+    display: flex;
+    gap: 10px;
+  }
+  .foot_title{
+    color: #d6ab5b;
+    padding-bottom: 0px;
+  }
+  .foot_copy{
+    color: #d6ab5b;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   margin-top: 25px
+  }
