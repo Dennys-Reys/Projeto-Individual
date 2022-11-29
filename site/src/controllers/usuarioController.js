@@ -97,6 +97,36 @@ function cadastrar(req, res) {
             );
     }
 }
+function votacao(req, res) {
+    // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
+   
+    var artista = req.body.votacaoServer;
+
+
+    // Faça as validações dos valores
+    if (artista == undefined) {
+        res.status(400).send("Seu nome está undefined!");
+    } else {
+        
+        // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
+        usuarioModel.votacao(artista)
+            .then(
+                function (resultado) {
+                    res.json(resultado);
+                }
+            ).catch(
+                function (erro) {
+                    console.log(erro);
+                    console.log(
+                        "\nHouve um erro ao realizar a votacão! Erro: ",
+                        erro.sqlMessage
+                    );
+                    res.status(500).json(erro.sqlMessage);
+                }
+            );
+    }
+}
+
 
 module.exports = {
     entrar,

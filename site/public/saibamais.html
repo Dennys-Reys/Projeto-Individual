@@ -58,67 +58,85 @@
                 <label for="radio4" class="manual-btn"></label>
             </div>
          
-    </div>
-   
-        <h2 class="faq_titulo">Perguntas frequentes</h2>
+    </div>       
+    </section>
+   <div class="textinho">  <h2 class="faq_titulo">Sad Pop Music Awards</h2> </div>
+    <div class="votacao">
         <div class="faq">
-            <div class="pergunta">
-                <h3>Sad pop é música depressiva ?</h3>
-                <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <div class="resposta">
-                <p>Não,sad po é um sub-genero novo do pop</p>
-            </div>
-            <div class="pergunta">
-                <h3>Sad pop é música depressiva ?</h3>
-                <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <div class="resposta">
-                <p>Não,sad po é um sub-genero novo do pop</p>
-            </div>
-            <div class="pergunta">
-                <h3>Sad pop é música depressiva ?</h3>
-                <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <div class="resposta">
-                <p>Não,sad po é um sub-genero novo do pop</p>
-            </div>
-            <div class="pergunta">
-                <h3>Sad pop é música depressiva ?</h3>
-                <ion-icon name="chevron-down-outline"></ion-icon>
-            </div>
-            <div class="resposta">
-                <p>Não,sad po é um sub-genero novo do pop</p>
+            <div class="pergunta1">
+                <h3>Qual seu artista Favorito?</h3> <br> 
+                <select name="artistaFavorito" id="artistaFav"> 
+                   <option value="1">Taylor Swift</option>
+                   <option value="2">Lana Del Rey</option>
+                   <option value="3">Lorde</option>
+                   <option value="4">Jonathan Bree</option>
+                   <option value="5">Princess Chelsea</option>
+                   <option value="6">Zella Day</option>
+                   <option value="7">Marina</option>
+                   <option value="8">Melanie Martinez</option>
+                   <option value="9">Harr Styles</option>
+                   <option value="10">Hone Gendry</option>
+                   <option value="11">Sharon Van Etten</option>
+                   <option value="12">Phoebe Bridgers</option>
+               </select>
+               <button id="registrar">Registrar</button>
             </div>
           
         </div>
-    </section>
-    <div class="bg_container">
-<img src="" alt="" id="background">
     </div>
-    <div class="player_container">
-<div class="img_container">
-    <img src="" alt="" id="cover" class="active">
-</div>
-<h2 id="title"></h2>
-<h3 id="artista"></h3>
-<audio src=""></audio>
-<div class="progresso_cont" id="progresso_cont">
-    <div class="progresso" id="progresso"></div>
-    <div class="duracao_linha">
-        <span id="current_time"></span>
-        <span id="duracao_time"></span>
-    </div>
-</div>
-<div class="player_controles">
-    <i class="fas fa-backward" id="prev" title="previous"></i>
-    <i class="fas fa-play main-button" id="play" title="play"></i>
-    <i class="fas fa-forward" id="next" title="next"></i>
-</div>
-    </div>
+  
     <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
     <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
     <script src="./js/saibamais.js"></script>
     
 </body>
 </html>
+<script>
+    function cadastrar() {
+
+        //Recupere o valor da nova input pelo nome do id
+        // Agora vá para o método fetch logo abaixo
+        var votacaoVar = artistaFav.value;
+        
+        
+
+        if (votacaoVar == "") {
+            alerrt('Você precisa votar para prosseguir')
+            return false;
+        }
+        else {
+            // Enviando o valor da nova input
+            fetch("/usuarios/cadastrar", {
+                method: "POST",
+                headers: {
+                    "Content-Type": "application/json"
+                },
+                body: JSON.stringify({
+                    // crie um atributo que recebe o valor recuperado aqui
+                    // Agora vá para o arquivo routes/usuario.js
+                   
+                    votacaoServer: votacaoVar,
+                })
+            }).then(function (resposta) {
+
+                console.log("resposta: ", resposta);
+
+                if (resposta.ok) {
+                    console.log("resposta: ", resposta);
+
+                    alert("Votação realizada com sucesso!")
+
+                    // window.location.href = 'login.html'
+
+                } else {
+                    throw ("Houve um erro ao tentar realizar a votação!");
+                }
+            }).catch(function (resposta) {
+                console.log(`#ERRO: ${resposta}`);
+            });
+
+            return false;
+        }
+    }
+
+</script>

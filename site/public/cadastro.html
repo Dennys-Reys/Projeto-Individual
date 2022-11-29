@@ -66,6 +66,7 @@
                     <label for="Conf-senha">Confirmar senha</label>
                     <input type="password" id="conf_senha_input" placeholder="Confirmar senha">
                 </div>
+                
                 <div class="botao">
                     <button onclick="cadastrar()">Cadastrar</button>
                 </div>
@@ -85,11 +86,13 @@
         // Agora vá para o método fetch logo abaixo
         var nomeVar = nome_input.value;
         var emailVar = email_input.value;
-        var telefoneVar = telefone_input.value
+        var telefoneVar = telefone_input.value;
+        var votacaoVar = artistaFav.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = conf_senha_input.value;
+        
 
-        if (nomeVar == "" || emailVar == "" || telefoneVar == "" || senhaVar == "" || confirmacaoSenhaVar == "") {
+        if (nomeVar == "" || emailVar == "" || telefoneVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || votacaoVar == "") {
             alerrt('Preencha todos os campos')
             return false;
         }
@@ -107,6 +110,7 @@
                     emailServer: emailVar,
                     telefoneServer: telefoneVar,
                     senhaServer: senhaVar,
+                    votacaoServer: votacaoVar,
                 })
             }).then(function (resposta) {
 
