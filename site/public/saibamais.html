@@ -78,21 +78,27 @@
                    <option value="10">Hone Gendry</option>
                    <option value="11">Sharon Van Etten</option>
                    <option value="12">Phoebe Bridgers</option>
+                   <option value="13">Phoebe Bridgers</option>
                </select>
-               <button id="registrar">Registrar</button>
+               <button onclick="votar()" id="registrar">Registrar</button>
             </div>
           
         </div>
+        <div class="maisVotado">
+            <p>Artista mais votado</p>
+            <p id="nomeArtista">NOME</p>
+            <p id="qtdVotos">10</p>
+        </div>
     </div>
   
-    <script  type = "module"  src = "https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script> 
-    <script  nomodule  src = "https://unpkg .com/ionicons@5.5.2/dist/ionicons/ionicons.js"> </script>
+    
+  
     <script src="./js/saibamais.js"></script>
     
 </body>
 </html>
 <script>
-    function cadastrar() {
+    function votar() {
 
         //Recupere o valor da nova input pelo nome do id
         // Agora vá para o método fetch logo abaixo
@@ -106,7 +112,7 @@
         }
         else {
             // Enviando o valor da nova input
-            fetch("/usuarios/cadastrar", {
+            fetch("/usuarios/votar", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -125,7 +131,7 @@
                     console.log("resposta: ", resposta);
 
                     alert("Votação realizada com sucesso!")
-
+                    maisVotado()
                     // window.location.href = 'login.html'
 
                 } else {
@@ -138,5 +144,17 @@
             return false;
         }
     }
+    
+    function maisVotado(){
+        fetch(`/usuarios/maisVotado`).then(function (resposta){
+            if(resposta.ok){
+                resposta.json().then(function(response){
+                    qtdVotos.innerHTML = response[0].votos
+                    nomeArtista.innerHTML = response[0].nome
+                })
+            }
+        })
+    }
+    maisVotado()
 
 </script>

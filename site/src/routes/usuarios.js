@@ -20,4 +20,11 @@ router.post("/autenticar", function (req, res) {
     usuarioController.entrar(req, res);
 });
 
+router.post("/votar", function (req, res) {
+    usuarioController.votar(req, res);
+});
+router.get("/maisVotado", function (req, res) {
+    usuarioController.maisVotado(req, res);
+});
+
 module.exports = router;

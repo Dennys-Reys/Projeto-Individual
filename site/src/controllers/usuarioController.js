@@ -97,7 +97,7 @@ function cadastrar(req, res) {
             );
     }
 }
-function votacao(req, res) {
+function votar(req, res) {
     // Crie uma variável que vá recuperar os valores do arquivo cadastro.html
    
     var artista = req.body.votacaoServer;
@@ -109,7 +109,7 @@ function votacao(req, res) {
     } else {
         
         // Passe os valores como parâmetro e vá para o arquivo usuarioModel.js
-        usuarioModel.votacao(artista)
+        usuarioModel.votar(artista)
             .then(
                 function (resultado) {
                     res.json(resultado);
@@ -127,10 +127,28 @@ function votacao(req, res) {
     }
 }
 
+function maisVotado(req, res) {
+    usuarioModel.maisVotado()
+        .then(function (resultado) {
+            if (resultado.length > 0) {
+                res.status(200).json(resultado);
+            } else {
+                res.status(204).send("Nenhum resultado encontrado!")
+            }
+        }).catch(
+            function (erro) {
+                console.log(erro);
+                console.log("Houve um erro ao realizar a consulta! Erro: ", erro.sqlMessage);
+                res.status(500).json(erro.sqlMessage);
+            }
+        );
+}
 
 module.exports = {
     entrar,
     cadastrar,
     listar,
-    testar
+    testar,
+    votar,
+    maisVotado
 }
