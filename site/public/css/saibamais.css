@@ -190,6 +190,14 @@ box-shadow: 0 15px 30px 5px rgba(0, 0, 0, 0.3);
     align-items: center;
     justify-content: center;
 }
+.votacao2{
+    justify-content: center;
+    display: center;
+    text-align: center;
+    font-size: 30px;
+    color: #570420;
+    margin-bottom: 30px;
+}
 .votacao{
     padding: 25px;
     display: flex;

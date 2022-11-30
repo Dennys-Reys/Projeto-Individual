@@ -44,7 +44,7 @@
         </div>
         <div class="form_box">
             <h2>Criar conta</h2>
-            <p>Já é um menbro? <a href="">Loguin</a></p>
+            <p>Já é um menbro? <a href="login.html">Login</a></p>
             <form action="#">
                 <div class="in_put">
                     <label for="nome">Nome completo</label>
@@ -87,12 +87,12 @@
         var nomeVar = nome_input.value;
         var emailVar = email_input.value;
         var telefoneVar = telefone_input.value;
-        var votacaoVar = artistaFav.value;
+        // var votacaoVar = artistaFav.value;
         var senhaVar = senha_input.value;
         var confirmacaoSenhaVar = conf_senha_input.value;
         
 
-        if (nomeVar == "" || emailVar == "" || telefoneVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" || votacaoVar == "") {
+        if (nomeVar == "" || emailVar == "" || telefoneVar == "" || senhaVar == "" || confirmacaoSenhaVar == "" ) {
             alerrt('Preencha todos os campos')
             return false;
         }
@@ -110,7 +110,7 @@
                     emailServer: emailVar,
                     telefoneServer: telefoneVar,
                     senhaServer: senhaVar,
-                    votacaoServer: votacaoVar,
+                    // votacaoServer: votacaoVar,
                 })
             }).then(function (resposta) {
 
