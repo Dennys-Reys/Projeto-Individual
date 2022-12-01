@@ -31,6 +31,18 @@ h1{
     
 
 }
+.quiz_btn{
+  align-items: center;
+    position: fixed;
+    right: 10px;
+    /* margin: 1% 90% 0 2%; */
+    z-index: 1;
+    width:min-content;
+
+}
+.quiz_btn a img{
+  height: 60px;
+}
 .btn_voltar img{
 height: 60px;
 }

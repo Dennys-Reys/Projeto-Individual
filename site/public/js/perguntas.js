@@ -3,9 +3,9 @@ var perguntas = [
     {
         numero: 1,
         pergunta: "Quantos anos tem a cantora Taylor Swift?",
-        resposta: "36 anos",
+        resposta: "33 anos",
         opcoes:[
-            "36 anos",
+            "33 anos",
             "25 anos",
             "40 anos",
             "22 anos"
@@ -14,11 +14,11 @@ var perguntas = [
     {
         numero: 2,
         pergunta: "Qual o nome verdadeiro de Lana del rey?",
-        resposta: "Elizabeth grand",
+        resposta: "Elizabeth grant",
         opcoes:[
             "Lorde",
             "Anastacia Rey",
-            "Elizabeth grand",
+            "Elizabeth grant",
             "Elizabeth del Grand"
         ]
     },
@@ -36,9 +36,9 @@ var perguntas = [
     {
         numero: 4,
         pergunta: "A primeira aparição da cantora Melanie Martinez,foi em qual programa de tv",
-        resposta: "American Idol",
+        resposta: "The Voice",
         opcoes:[
-            "American Idol",
+            "The Voice",
             "Good Morning America",
             "Jimmy fallon",
             "The Ellen Show"
